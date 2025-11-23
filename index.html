@@ -4,8 +4,12 @@
         <meta charset="UFC-8">
         <title>sakuraの部屋</title>
         <style>
+            @font-face {
+                font-family: higure;
+                src: url(/ひぐれゴシック/HigureGothic-Black.ttf);
+            }
             body {
-            font-family: Arial, sans-serif;
+            font-family: higure;
             background-color: #f3f3f3;
             margin: 20px;
             display: flex;
@@ -36,11 +40,15 @@
             background-color: #34495e;
         }
         .content {
+            margin-top: 20px;
             padding: 20px;
             flex-grow: 1;
         }
         .page {
             display: none;
+        }
+        #pf {
+            display: flex;
         }
         </style>
         <script>
@@ -55,27 +63,55 @@
 </head>
 <body>
     <header style="width:100%; background:#34495e; color:white; padding:15px 20px; box-sizing:border-box; position:fixed; top:0; left:0;">
-    <h1 style="margin:0; font-size:24px;color: white;">メインタイトル</h1>
+    <h1 style="margin:0; font-size:24px;color: white;">sakuraの部屋</h1>
     </header>
     <div class="slider"style="margin-top:70px;">
-        <a href="#" onclick="showPage('home')">ホーム</a>
-        <a href="#" onclick="showPage('page1')">１ページ</a>
-        <a href="#" onclick="showPage('page2')">２ページ</a>
+        <a href="#" onclick="showPage('home')">プロフィール</a>
+        <a href="#" onclick="showPage('page1')">フリフ記録</a>
+        <a href="#" onclick="showPage('page2')">プロセカ記録</a>
         <a href="#" onclick="showPage('page3')">その他</a>
     </div>
     <div class="content">
         <div id="home" class="page" style="display: block;" >
-         <h1>ホーム</h1>
-         <p>最初の説明</p>
+         <h1>プロフィール</h1>
+         <div id="pf">
+         <img src="profile.png" alt="プロフィール画像" width="500px">
+         <div style="margin-left: 30px;">
+         <h2>名前　　　sakura </h2>
+            <h2>Flyff活動鯖　リシス</h2>
+        <h2>Flyffメインキャラクター　徒桜 </h2>
+        <h2>所属ギルド　Häagen-Dazs </h2>
+        <h2>プロセカ活動ネーム　桜餅 </h2>
+        <h2>プロセカプレイヤーID　616067339327754252</h2>
+        <div style="display: flex;">
+        <h2 style="margin-right: 15px;">箱ごとの推し</h2> 
+        <div>
+        <h3>VIRTUALSINGER　初音ミク</h3>
+        <h3>Leo/need　星乃一歌 </h3>
+        <h3>MREMOREJUMP!　花里みのり </h3>
+        <h3>VividBADSQUAD　白石杏 </h3>
+        <h3>ワンダーランズXショウタイム　草薙寧々 </h3>
+        <h3>25時ナイトコードで。　ニーゴミク</h3>
+         </div>
+         </div>
+         </div> 
         </div>
         <div id="page1" class="page">
-            <h1>ページ１</h1>
+            <h1>フリフの記録</h1>
+
         </div>
         <div id="page2" class="page">
-            <h1>ページ２</h1>
+            <h1>プロセカ記録</h1>
         </div>
-        <div id="page3" class="page">
+        <div class="page">
+            <div id="page3" style="display: block;"> 
             <h1>その他</h1>
+            <h2>リンク等</h2>
+            <a href="https://x.com/sakura_deshu">Twitter(現x)</a><br>
+            <a href="https://marshmallow-qa.com/6ovqwt5e6ay016i?t=2AlIRg&utm_medium=url_text&utm_source=promotion">マシュマロ</a><br>
+            <a href="https://universe.flyff.com/?lang=jp">Flyff Univese公式HP</a><br>
+            <a href="https://pjsekai.sega.jp/">プロセカ公式HP</a>
+        </div>
         </div>
 
         
